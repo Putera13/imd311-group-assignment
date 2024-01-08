@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SNEAKERS.CO</title>
+	<link rel="stylesheet" href="shoes.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+</head>
+<body>
+	<div id="header">
+		<div class="logo">
+			<h1><span>Sneakers</span>.CO</h1>
+		</div>
+		<div id="navlinks">
+			<ul>
+				<li class="nav-hover"><a href="home.html">Home</a></li>
+				<li class="nav-hover"><a href="aboutus.html">About Us</a></li>
+				<li class="nav-hover"><a href="product.html">Product</a></li>
+				<li class="nav-hover"><a href="tutorial.html">Tutorial</a></li>
+				<li class="nav-hover"><a href="services.html">Services</a></li>
+				<li class="nav-hover"><a href="contactus.html">Contact Us</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="section1">
+		<div class="slideshow-container">
+
+			<div class="mySlides fade">
+			  <div class="numbertext">1 / 3</div>
+			  <img src="images\kasut 29.jpg" style="width:60%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">2 / 3</div>
+			  <img src="images\kasut 30.jpg" style="width:60%">
+			</div>
+			
+			<div class="mySlides fade">
+			  <div class="numbertext">3 / 3</div>
+			  <img src="images\kasut 31.jpg" style="width:60%">
+			</div>
+			
+			</div>
+			<br>
+			
+			<div style="text-align:left">
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			  <span class="dot"></span> 
+			</div>
+			
+			<br>
+			
+			<script>
+				let slideIndex = 0;
+				showSlides();
+				
+				function showSlides() {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("dot");
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				  }
+				  slideIndex++;
+				  if (slideIndex > slides.length) {slideIndex = 1}    
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";  
+				  dots[slideIndex-1].className += " active";
+				  setTimeout(showSlides, 2000); // Change image every 2 seconds
+				}
+			</script>
+
+			<div id="slogan">
+				<h1><span>Sneakers</span>.Co</h1>
+				<h1>Your<span> Comfort Matters</span></h1>
+				<br>
+				<button class="buy"><a href="https://forms.gle/bZiKYS9vVcLdd4zx8">Let's Buy</a></button>
+			</div>
+		</div>
+	</div>
+	<div id="section2" allign="center">
+		<h1>Our <span>Services</span></h1>
+	
+		<div id="services">
+			<div class="s1">
+				<h2>24/7 Customer <span>Support</span></h2>
+				<br>
+				<a class="s" href="services.html"><i class="fa-solid fa-headset"></i></a>
+			</div>
+
+			<div class="s1">
+				<h2>Superfast <span>Delivery</span></h2>
+				<br>
+				<a class="s" href="services.html"><i class="fa-solid fa-truck-fast"></i></a>
+			</div>
+
+			<div class="s1">
+				<h2>Easy <span>Returns</span></h2>
+				<br>
+				<a class="s" href="services.html"><i class="fa-solid fa-sack-dollar"></i></a>
+			</div>
+
+			<div class="s1">
+				<h2>User <span>Satisfaction</span></h2>
+				<br>
+				<a class="s" href="services.html"><i class="fa-solid fa-face-smile"></i></a>
+			</div>
+		</div>
+	</div>
+
+	<div id="section3">
+		<h1><span>Top</span> Selling</h1>
+
+		<div id="trending">
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 2.jpg" width="300px">
+				<h5>#001</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br>
+				<br>
+				<h3>RM100</h3>
+			</div>
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 3.jpg" width="300px">
+				<h5>#002</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br>
+				<br>
+				<h3>RM85</h3>
+			</div>
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 4.jpg" width="300px">
+				<h5>#003</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+				<br>
+				<br>
+				<h3>RM70</h3>
+			</div>
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 5.jpg" width="300px">
+				<h5>#004</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br>
+				<br>
+				<h3>RM90</h3>
+			</div>
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 6.jpg" width="300px">
+				<h5>#005</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br>
+				<br>
+				<h3>RM65</h3>
+			</div>
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 7.jpg" width="300px">
+				<h5>#006</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br>
+				<br>
+				<h3>RM50</h3>
+			</div>
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 8.jpg" width="300px">
+				<h5>#007</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br>
+				<br>
+				<h3>RM79</h3>
+			</div>
+
+			<div class="t1">
+				<a href=""><i class="fa-solid fa-heart"></i></a>
+				<br>
+				<br>
+				<img src="images\kasut 9.jpg" width="300px">
+				<h5>#008</h5>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br>
+				<br>
+				<h3>RM100</h3>
+			</div>
+
+		</div>
+	</div>
+	<div id="section4">
+		<h1>Top <span>Reviews</span></h1>
+		<div id="reviews">
+
+			<div class="review">
+				<img src="images\review2.jpg" width="30%">
+				<br>
+				<br>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star"></i></a>
+				<br><br>
+				<p style="line-height: 20px;">
+					produk cepat sampai, produk sampai dalam keadaan baik, penghantaran laju baru order 2 hari lepas harini sampai.
+				</p>
+
+			</div>
+
+			<div class="review">
+				<img src="images\review1.jpg" width="30%">
+				<br>
+				<br>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<br><br>
+				<p style="line-height: 20px;">
+					Kualiti tiptop harga B40
+				</p>
+			</div>
+
+			<div class="review">
+				<img src="images\review3.jpg" width="30%">
+				<br>
+				<br>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-solid fa-star"></i></a>
+				<a href=""><i class="fa-sharp fa-regular fa-star-half-stroke"></i></a>
+				<br><br>
+				<p style="line-height: 20px;">
+					Barangan sampai dalam keadaan baik, cuma penghantaran terlambat sikit, mungkin sbb JNT.
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="section5">
+
+		<h1><span>Contact</span> Us</h1>
+
+		<div class="form">
+			<input type="text" placeholder="Name" id="Name">
+			<input type="email" placeholder="Email" id="Email">
+			<input type="number" placeholder="Mobile NO" id="Mobile NO">
+			<textarea id="text-area" cols="10" rows="5" placeholder="Your Message"></textarea>
+			<button class="query"><a href="">Submit</a></button>
+		</div>
+	</div>
+
+	</div>
+	<div id="copyright"><h4>&#169; Copyright 2023 Sneakers.Co all rights reserved</h4></div>
+</body>
+</html>
